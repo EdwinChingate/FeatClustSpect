@@ -1,3 +1,4 @@
+import numpy as np
 def ValleyBordersUpdate(ValleyLoc,spectra,Centroids,centroidLoc):
     if len(ValleyLoc)>0:
         Valley=spectra[ValleyLoc,:]

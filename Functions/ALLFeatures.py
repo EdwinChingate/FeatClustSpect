@@ -1,3 +1,4 @@
+import numpy as np
 def ALLFeatures(Centroids,allFeatures=[]):
     NCent=len(Centroids)
     NFeat=len(allFeatures)
