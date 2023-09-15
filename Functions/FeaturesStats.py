@@ -6,5 +6,5 @@ def FeaturesStats(Signals):
     l=len(Signals[:,1])    
     VarianMZ=sum(RelativeInt*(Signals[:,0]-AverageMZ)**2)*l/(l-1)  
     StdMZ=np.sqrt(VarianMZ)
-    featuresStats=[AverageMZ,StdMZ]    
+    featuresStats=[AverageMZ,StdMZ,SumIntens]    
     return featuresStats

@@ -9,4 +9,5 @@ def UpdateBorders(Centroids,allFeatures,SafetyFactor=4): #This one should also c
             featuresStats=FeaturesStats(Signals=Signals)
             mz=featuresStats[0]
             mz_std=featuresStats[1]
-            Centroids[Cfeat,[0,1,2]]=[mz,mz-SafetyFactor*mz_std,mz+SafetyFactor*mz_std]
+            SumInt=featuresStats[2]
+            Centroids[Cfeat,[0,1,2,4]]=[mz,mz-SafetyFactor*mz_std,mz+SafetyFactor*mz_std,SumInt]
